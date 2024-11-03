@@ -1,0 +1,11 @@
+.animated {
+    opacity: 0; /* Empieza completamente invisible */
+    transform: translateY(30px); /* Desplazado hacia abajo */
+    transition: opacity 0.8s ease-out, transform 10s ease-out; /* Duración y estilo de la transición */
+  }
+  
+  .fade-in {
+    opacity: 1; /* Totalmente visible */
+    transform: translateY(0); /* Posición final */
+  }
+  

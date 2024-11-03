@@ -1,0 +1,28 @@
+.carousel-container {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+  margin-top: 20px; /* Ajusta el margen superior según lo necesites */
+}
+
+.carousel-track {
+  display: flex;
+  animation: scroll 20s linear infinite;
+}
+
+.carousel-image {
+  width: 100%; /* Para que ocupe el ancho completo */
+  max-width: 300px; /* Puedes ajustar el tamaño máximo de las imágenes */
+  height: auto; /* Para mantener la proporción */
+  margin-right: 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
